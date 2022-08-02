@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rangkuman Bulan Ini"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pemasukan: "
+                android:textStyle="bold"
+                android:textColor="@color/emerald_green"/>
+
+            <TextView
+                android:id="@+id/total_pemasukan_bulan_ini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 150.000.000"
+                android:textColor="@color/emerald_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengeluaran: "
+                android:textStyle="bold"
+                android:textColor="@color/cadmium_red"/>
+
+            <TextView
+                android:id="@+id/total_pengeluaran_bulan_ini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 150.000.000"
+                android:textColor="@color/cadmium_red"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--  Chart  -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/pemasukan_and_pengeluaran_button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/pemasukan_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/celadon"
+                android:src="@drawable/ic_logo_pemasukan_removebg_preview"/>
+
+            <ImageButton
+                android:id="@+id/pengeluaran_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/celadon"
+                android:src="@drawable/ic_logo_pengeluaran_removebg_preview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pemasukan_dan_pengeluaran_button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pemasukan_and_pengeluaran_button_container">
+
+            <ImageButton
+                android:id="@+id/detail_cash_flow_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/celadon"
+                android:src="@drawable/ic_detail_cash_flow_removebg_preview"/>
+
+            <ImageButton
+                android:id="@+id/pengaturan_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/celadon"
+                android:src="@drawable/ic_logo_pengaturan_removebg_preview"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
