@@ -95,8 +95,7 @@
                 android:layout_height="150dp"
                 android:layout_marginEnd="15dp"
                 android:adjustViewBounds="true"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_launcher_foreground"/>
+                android:src="@mipmap/ic_image"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
